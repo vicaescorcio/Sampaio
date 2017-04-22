@@ -22,10 +22,15 @@
 	$(function() {
 
 		var	$window = $(window),
-			$body = $('body');
+			$body = $('#posload');
 
 		// Disable animations/transitions until the page has loaded.
+			$body.addClass('is-loading');
 
+			$window.on('load', function() {
+				$body.removeClass('is-loading');
+				$(".loader").fadeOut("slow");
+			});
 
 		// Forms (IE<10).
 			var $form = $('form');
