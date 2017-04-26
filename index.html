@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/skel.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-wide.css" />
+		<link rel="stylesheet" href="css/animation-icon.min.css" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
@@ -26,6 +27,7 @@
     
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="js/jquery-ui.js"></script>
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -40,48 +42,64 @@
 				<img src="images/logo_azul.png" alt="" />
 				<h1>SAMPAIO JÚNIOR</h1>
 				<p>ADVOGADOS     ASSOCIADOS </p>
+				<a href="#"  id = "header-icon" class="image icon faa-float animated  fa-angle-double-down"></a>
 			</div>
     
 
 		<!-- Main -->
 			<div id="main">
 
+       
 				<header class="major container 75%">
-					<h2>We conduct experiments that
+				
+					<h2>"Alguma citação
 					<br />
-					may or may not seriously
+				   de sua 
 					<br />
-					break the universe</h2>
+					escolha"</h2>
 					<!--
 					<p>Tellus erat mauris ipsum fermentum<br />
 					etiam vivamus nunc nibh morbi.</p>
 					-->
 				</header>
 
+       
 				<div class="box alt container">
-					<section class="feature left">
-						<a href="#" class="image icon fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+
+					<section id='front' class="feature left">
+						<a class="bu icon fa-book image"><img src="images/pic01.jpg" alt="" / class="bu"></a>
 						<div class="content">
-							<h3>The First Thing</h3>
+							<a class="bu"><h3>Quem somos ?</h3></a>
+						
+							
+						</div>
+					</section>
+					<section id= 'back' class="feature left">
+						<a class="image icon bu fa-book"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="content">
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="#" class="image icon fa-code"><img src="images/pic02.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-pencil-square-o"><img src="images/pic02.jpg" alt="" /></a>
 						<div class="content">
-							<h3>The Second Thing</h3>
+							<h3>Atuação</h3>
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
 					</section>
 					<section class="feature left">
-						<a href="#" class="image icon fa-mobile"><img src="images/pic03.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-home "><img src="images/pic03.jpg" alt="" /></a>
 						<div class="content">
-							<h3>The Third Thing</h3>
+							<h3>Escritório</h3>
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
 					</section>
+
 				</div>
 
+
+    
+				
 				<!--
 				<div class="box container">
 					<header>
@@ -232,21 +250,26 @@
 				-->
 
 				<footer class="major container 75%">
-					<h3>Get shady with science</h3>
+					<h3>Seja um sócio!</h3>
 					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
 					<ul class="actions">
-						<li><a href="#" class="button">Join our crew</a></li>
+						<li><a href="#" class="button">Junte-se a equipe</a></li>
 					</ul>
 				</footer>
+        <footer class="major container 100%">
+          <h3>Localização</h3>   
+        		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.235211232146!2d-38.492364185700254!3d-3.7589043443798253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748a6802319db%3A0xaa5983a10baffe31!2sR.+Albert+Sabin%2C+181+-+Guararapes%2C+Fortaleza+-+CE%2C+60810-060!5e0!3m2!1spt-BR!2sbr!4v1493060454809" width=100% height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+        </footer>
 			</div>
 
 		<!-- Footer -->
 			<div id="footer">
+			  
 				<div class="container 75%">
-
+        
 					<header class="major last">
-						<h2>Questions or comments?</h2>
+						<h2>Entre em contato</h2>
 					</header>
 
 					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
@@ -255,7 +278,7 @@
 					<form method="post" action="#">
 						<div class="row">
 							<div class="6u 12u(mobilep)">
-								<input type="text" name="name" placeholder="Name" />
+								<input type="text" name="name" placeholder="Nome" />
 							</div>
 							<div class="6u 12u(mobilep)">
 								<input type="email" name="email" placeholder="Email" />
@@ -263,13 +286,13 @@
 						</div>
 						<div class="row">
 							<div class="12u">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
+								<textarea name="message" placeholder="Messagem" rows="6"></textarea>
 							</div>
 						</div>
 						<div class="row">
 							<div class="12u">
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Enviar" /></li>
 								</ul>
 							</div>
 						</div>
@@ -279,12 +302,10 @@
 						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; GER4.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</div>
