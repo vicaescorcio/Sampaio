@@ -37,16 +37,18 @@
    <div class="loader"></div>
     <!--TopNav-->
       <div class="topnav" id="myTopnav">
-        <a href="#home">Quem somos?</a>
-        <a href="#news">Atuação</a>
-        <a href="#contact">Escritório</a>
-        <a href="#contact">Links</a>
-        <a href="#about">Faça parte</a>
-        <a href="#">Contato</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="#home"    class="faa-pulse animated-hover d">Contato</a>
+        <a href="#news"    class="faa-pulse animated-hover d">Escritório</a>
+        <a href="#contact" class="faa-pulse animated-hover d">Faça parte</a>
+        <a href="#contact" class="faa-pulse animated-hover d">Links</a>
+        <a href="#about"   class="faa-pulse animated-hover d">Atuação</a>
+        <a href="#"        class="faa-pulse animated-hover d">Sobre</a>
+        <a class="faa-pulse animated-hover icon-close d"><i class="fa fa-times " aria-hidden="true"></i></a>
+         <a class="faa-passing-reverse animated icon-open "><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+
+       
       </div>
-      	
-   
+     
 		<!-- Header -->
 			<div id="header">	  
 				<img src="images/logo_azul.png" alt="" />
@@ -54,7 +56,7 @@
 				<p>ADVOGADOS     ASSOCIADOS </p>
 				<a id = "header-icon" class="image icon faa-float animated  fa-angle-double-down"></a>
 			</div>
-    <i class=" fa fa-chevron-circle-left" aria-hidden="true"></i>
+    
 
 		<!-- Main -->
 			<div id="main">
@@ -325,7 +327,18 @@
 	<script type="text/javascript">
 $(window).load(function() {
 	$(".loader").fadeOut("slow");
+  $(".icon-close").click(function(){
+  	$(".d").hide("drop",{},300,function(){
+  		$(".icon-open").show("drop",{},100);
+  	});
+  	
+  });
+  $(".icon-open").click(function(){
+    $(this).hide("drop",{},500,function(){
+    	$(".d ").show("drop",{},500);
 
+    });
+  });
 })
 </script>
 </html>

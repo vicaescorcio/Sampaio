@@ -1008,12 +1008,13 @@
     overflow: hidden;
     z-index: 999;
     width: 100%;
+    
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: right;
-    display: block;
+    display: none;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -1023,9 +1024,20 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    
+    
+}
+ a.icon-close {
+    float:left;
+    font-size: 25px;
+}
+ a.icon-open {
+    float:right;
+    font-size: 40px;
+    display: block;
     color: black;
 }
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
