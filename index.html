@@ -35,17 +35,26 @@
 	<body>
     
    <div class="loader"></div>
-
-
-
+    <!--TopNav-->
+      <div class="topnav" id="myTopnav">
+        <a href="#home">Quem somos?</a>
+        <a href="#news">Atuação</a>
+        <a href="#contact">Escritório</a>
+        <a href="#contact">Links</a>
+        <a href="#about">Faça parte</a>
+        <a href="#">Contato</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      	
+   
 		<!-- Header -->
-			<div id="header">		  
+			<div id="header">	  
 				<img src="images/logo_azul.png" alt="" />
 				<h1>SAMPAIO JÚNIOR</h1>
 				<p>ADVOGADOS     ASSOCIADOS </p>
 				<a id = "header-icon" class="image icon faa-float animated  fa-angle-double-down"></a>
 			</div>
-    
+    <i class=" fa fa-chevron-circle-left" aria-hidden="true"></i>
 
 		<!-- Main -->
 			<div id="main">
@@ -316,6 +325,7 @@
 	<script type="text/javascript">
 $(window).load(function() {
 	$(".loader").fadeOut("slow");
+
 })
 </script>
 </html>
