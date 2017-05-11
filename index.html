@@ -37,15 +37,13 @@
    <div class="loader"></div>
     <!--TopNav-->
       <div class="topnav" id="myTopnav">
-        <a href="#home"    class="faa-pulse animated-hover d">Contato</a>
-        <a href="#news"    class="faa-pulse animated-hover d">Escritório</a>
-        <a href="#contact" class="faa-pulse animated-hover d">Faça parte</a>
-        <a href="#contact" class="faa-pulse animated-hover d">Links</a>
-        <a href="#about"   class="faa-pulse animated-hover d">Atuação</a>
-        <a href="#"        class="faa-pulse animated-hover d">Sobre</a>
-        <a class="faa-pulse animated-hover icon-close d"><i class="fa fa-times " aria-hidden="true"></i></a>
-         <a class="faa-passing-reverse animated icon-open "><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
-
+        <a href="#home"    class="faa-pulse animated-hover ">Contato</a>
+        <a href="#news"    class="faa-pulse animated-hover ">Escritório</a>
+        <a href="#contact" class="faa-pulse animated-hover ">Faça parte</a>
+        <a href="#contact" class="faa-pulse animated-hover ">Links</a>
+        <a href="#about"   class="faa-pulse animated-hover ">Atuação</a>
+        <a href="#"        class="faa-pulse animated-hover ">Sobre</a>
+       
        
       </div>
      
@@ -327,18 +325,24 @@
 	<script type="text/javascript">
 $(window).load(function() {
 	$(".loader").fadeOut("slow");
-  $(".icon-close").click(function(){
-  	$(".d").hide("drop",{},300,function(){
-  		$(".icon-open").show("drop",{},100);
-  	});
-  	
-  });
-  $(".icon-open").click(function(){
-    $(this).hide("drop",{},500,function(){
-    	$(".d ").show("drop",{},500);
+ 
+ 
 
-    });
-  });
+  var headerTop = $('#header').offset().top;
+        var headerBottom = headerTop + 120; // Sub-menu should appear after this distance from top.
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+            if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                if (($(".topnav").is(":visible") === false)) {
+                    $('.topnav').show('blind',{},400);
+                }
+            } else {
+                if ($(".topnav").is(":visible")) {
+                    $('.topnav').hide("blind",{},200);
+                }
+            }
+        });
+
 })
 </script>
 </html>

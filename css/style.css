@@ -1008,13 +1008,13 @@
     overflow: hidden;
     z-index: 999;
     width: 100%;
+    display: none;
     
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: right;
-    display: none;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
