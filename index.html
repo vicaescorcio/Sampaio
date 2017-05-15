@@ -43,9 +43,13 @@
         <a href="#contact" class="faa-pulse animated-hover ">Links</a>
         <a href="#about"   class="faa-pulse animated-hover ">Atuação</a>
         <a href="#"        class="faa-pulse animated-hover ">Sobre</a>
-       
+        <a  class="icon-nav" id="icon-nav"><i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <a  class="icon-nav-close"><i class="fa fa-times " aria-hidden="true"></i>
+        </a>
        
       </div>
+
      
 		<!-- Header -->
 			<div id="header">	  
@@ -85,7 +89,10 @@
 						</div>
 					</section>
 					<section id= 'back' class="feature left">
-						<a class="image icon bu fa-book"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="image">
+						  <h3> Quem somos ?</h3>
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+						</div>
 						<div class="content">
 							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
@@ -325,23 +332,44 @@
 	<script type="text/javascript">
 $(window).load(function() {
 	$(".loader").fadeOut("slow");
- 
- 
 
-  var headerTop = $('#header').offset().top;
-        var headerBottom = headerTop + 120; // Sub-menu should appear after this distance from top.
-        $(window).scroll(function () {
-            var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
-            if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
-                if (($(".topnav").is(":visible") === false)) {
-                    $('.topnav').show('blind',{},400);
-                }
-            } else {
-                if ($(".topnav").is(":visible")) {
-                    $('.topnav').hide("blind",{},200);
-                }
-            }
-        });
+  var isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+  if (!isMobile) {
+    var headerTop = $('#header').offset().top;
+          var headerBottom = headerTop + 120; // Sub-menu should appear after this distance from top.
+          $(window).scroll(function () {
+              var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+              if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                  if (($(".topnav").is(":visible") === false)) {
+                      $('.topnav').show('blind',{},300);
+                  }
+              } else {
+                  if ($(".topnav").is(":visible")) {
+                      $('.topnav').hide("blind",{},300);
+                  }
+              }
+          });
+   }
+
+
+   $(".icon-nav").click(function(){
+
+   	  $(".topnav a").css("display","block");
+   	  $(this).hide();
+
+
+   });
+
+
+   $(".icon-nav-close").click(function(){
+
+   	  $(".topnav a").hide();
+   	  $(".icon-nav").show();
+
+
+   });
+   
 
 })
 </script>
