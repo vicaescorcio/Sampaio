@@ -1,7 +1,8 @@
 $(document).ready(function(){
-	$('.bu').click(function(){
-		$('#front').hide("drop", {}, 1000, function(){
-			$('#back').show("drop",{},1000);
+	$('.flip').click(function(){
+		var id = $(this).parent().attr("id");
+		$(this).parent().hide("drop", {}, 1000, function(){
+			$(id).show("drop",{},1000);
 		});
 		
 	});
