@@ -10,7 +10,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-
+    <link rel="shortcut icon" href="images/favicon-2.png" type="image/x-png" />
 
     <!--Import materialize.css-->
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
@@ -38,8 +38,8 @@
       <div class="topnav" id="myTopnav">
         <a href="#contact"class="faa-pulse animated-hover ">Contato</a>
         <a href="#join"   class="faa-pulse animated-hover ">Faça parte</a>
-        <a href="#office" class="faa-pulse animated-hover ">Escritório</a>
         <a href="#links"  class="faa-pulse animated-hover ">Links</a>
+        <a href="#office" class="faa-pulse animated-hover ">Escritório</a>
         <a href="#work"   class="faa-pulse animated-hover ">Atuação</a>
         <a href="#about"  class="faa-pulse animated-hover ">Sobre</a>
         <a  class="icon-nav" id="icon-nav"><i class="fa fa-bars" aria-hidden="true"></i>
@@ -171,12 +171,12 @@
            <a class="next">&#10095;</a>
            </div>
            <div style="text-align:center">
-             <span class="dot" ></span> 
-             <span class="dot" ></span> 
-             <span class="dot" ></span> 
-             <span class="dot" ></span> 
-             <span class="dot" ></span> 
-             <span class="dot" ></span> 
+             <span id=1 class="dot" ></span> 
+             <span id=2 class="dot" ></span> 
+             <span id=3 class="dot" ></span> 
+             <span id=4 class="dot" ></span> 
+             <span id=5 class="dot" ></span> 
+             <span id=6 class="dot" ></span> 
            </div>
 					</section>
 					<div id="office"></div>
@@ -187,11 +187,25 @@
 						</div>
 					</section>
 					<div id="links"></div>
-					<section class="feature right">
-						<a href="#" class="image icon fa-link "><img src="images/pic01.jpg" alt="" /></a>
+					<section href= ".back-3" class="front-3 feature right">
+						<a  class="flip image icon fa-link "><img src="images/pic01.jpg" alt="" /></a>
 						<div class="content">
 							<h3>Links</h3>
 						</div>
+					</section>
+					<section href=".front-3" class="back-3 box  container" >
+					<header>
+							<h3>Links jurídicos</h3>
+						</header>
+						<ol class="my-ol">
+							<li><a href="http://www.stf.jus.br/portal/principal/principal.asp">Supremo Tribunal Federal</a></li>
+							<li><a href="http://www.stj.gov.br/">Superior Tribunal  de Justiça</a></li>
+							<li><a href="https://portalextranet.tst.jus.br/">Tribunal Superior do Trabalho</a></li>
+							<li><a href="http://www.trt7.jus.br/">Tribunal Regional do Trabalho da 7º Região</a></li>
+							<li><a href="http://www.trf5.jus.br/">Tribunal Regional Federal da 5º Região</a></li>
+							<li><a href="http://www.tjce.jus.br/principal/default.asp">Tribunal de Justiça do Ceará</a></li>
+							<li><a href="http://www.pf.gov.br/">Departamento de Polícia Federal</a></li>
+						</ol>
 					</section>					
 
 				</div>
@@ -458,21 +472,24 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-
+  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
-  /*for (i = 0; i < dots.length; i++) {
+  for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
-  }*/
+  }
   slides[slideIndex-1].style.display = "block"; 
-  //dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " active";
 }
 
 
-
+$(".dot").click(function(){
+	var n = $(this).attr("id");
+	currentSlide(n);
+});
 $(".prev").click(function(){
 	plusSlides(-1);
  });
