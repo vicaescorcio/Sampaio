@@ -50,7 +50,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #060835;
+			color: gray;
 			
 		}
 
@@ -111,7 +111,9 @@
 	blockquote {
 		/*border-left: solid 0.5em rgba(224, 224, 224, 0.75);*/
 		font-style: italic;
+		font-size: 30px;
 		padding: 1em 0 1em 2em;
+		margin:0 auto;
 	}
 
 /* Section/Article */
@@ -580,7 +582,7 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background: white;
+			
 
 		}
 
@@ -1105,6 +1107,14 @@
 	top: 600px;
 	font-size: 15px;
 }
+
+@media only screen and (max-width: 1150px)
+{
+ #header-icon{
+	top:500px;}
+
+}
+
 
  a{
 	cursor: pointer;
