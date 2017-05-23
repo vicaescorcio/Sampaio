@@ -112,8 +112,12 @@
 		/*border-left: solid 0.5em rgba(224, 224, 224, 0.75);*/
 		font-style: italic;
 		font-size: 30px;
+		word-spacing: 7px;
+		letter-spacing: 3px;
 		padding: 1em 0 1em 2em;
 		margin:0 auto;
+		font-weight: 200;
+
 	}
 
 /* Section/Article */
@@ -1108,7 +1112,7 @@
 	font-size: 15px;
 }
 
-@media only screen and (max-width: 1150px)
+@media only screen and (max-width: 1250px)
 {
  #header-icon{
 	top:500px;}
