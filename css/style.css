@@ -50,7 +50,8 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: green;
+			color: #060835;
+			
 		}
 
 	strong, b {
@@ -108,7 +109,7 @@
 	}
 
 	blockquote {
-		border-left: solid 0.5em rgba(224, 224, 224, 0.75);
+		/*border-left: solid 0.5em rgba(224, 224, 224, 0.75);*/
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
@@ -557,9 +558,10 @@
 		-o-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		background: #544d55;
+		background:#060835;
 		border-radius: 4px;
-		border: 0;
+		border:1px;
+		border-color: #060835;
 		color: white;
 		cursor: pointer;
 		display: inline-block;
@@ -578,7 +580,8 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background: #6e6570;
+			background: white;
+
 		}
 
 		input[type="submit"]:active,
