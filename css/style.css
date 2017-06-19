@@ -761,7 +761,7 @@
 
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../images/header.jpg");
+		background-image: url("images/top-3200.png"), url("images/overlay.png"), url("../images/header.jpg");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
@@ -864,7 +864,7 @@
 	#footer {
 		background-attachment: scroll;
 		background-color: #060835;
-		background-image: url("images/bottom-3200.svg");
+		background-image: url("images/bottom-3200.png");
 		background-position: top center;
 		background-repeat: repeat-x;
 		background-size: 3200px 460px;
@@ -1022,7 +1022,7 @@
 
 
 /* drop effects */
-.back-1, .back-2, .back-3{
+.flop{
 	display: none;
 }
 /*topnav*/
@@ -1140,7 +1140,7 @@
 }
 .fa-reply{
 	font-size: 30px;
-	color: black;
+	color: gray;
 	font-weight: 200;
 	transition: 0.6s ease;
 }
@@ -1241,7 +1241,7 @@ CARD */
 }
 
 .active, .dot:hover {
-  background-color: black;
+  background-color: gray;
 }
 
 /* Fading animation */
@@ -1263,6 +1263,8 @@ CARD */
 }
 /* end */
 
-.my-ol{
+ .my-ol{
 	text-align: center;
+  background-image: url("images/pic05.png");
+
 }
