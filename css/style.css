@@ -1268,3 +1268,11 @@ CARD */
   background-image: url("images/pic05.png");
 
 }
+.icon2{
+	color: gray;
+	font-size: 80px;
+  margin: 0 auto;
+  text-align: center; /* Altere para o valor da largura desejada. */
+	
+
+}
