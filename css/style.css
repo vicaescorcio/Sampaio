@@ -111,18 +111,18 @@
 	blockquote {
 		/*border-left: solid 0.5em rgba(224, 224, 224, 0.75);*/
 		font-style: italic;
-		font-size: 30px;
+		font-size: 20px;
 		word-spacing: 7px;
 		letter-spacing: 3px;
 		padding: 1em 0 1em 2em;
 		margin:0 auto;
-		font-weight: 200;
+		font-weight: 500;
 
 	}
 	@media screen and (max-width:900px ){
 		blockquote{
 				font-style: italic;
-		font-size: 20px;
+		font-size: 16px;
 		word-spacing: normal;
 		letter-spacing: normal;
 		padding: 1em 0 1em 2em;
@@ -1270,7 +1270,7 @@ CARD */
 }
 .icon2{
 	color: gray;
-	font-size: 80px;
+	font-size: 50px;
   margin: 0 auto;
   text-align: center; /* Altere para o valor da largura desejada. */
 	
