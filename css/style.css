@@ -478,7 +478,7 @@
 				-ms-transition: background-color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out;
 				border-radius: 100%;
-				border: solid 1px rgba(224, 224, 224, 0.75);
+				
 				display: inline-block;
 				height: 2em;
 				line-height: 2em;
@@ -1275,4 +1275,8 @@ CARD */
   text-align: center; /* Altere para o valor da largura desejada. */
 	
 
+}
+.whats{
+	width: 15px;
+	height: auto;
 }
